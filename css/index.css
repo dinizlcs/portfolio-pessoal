@@ -1,0 +1,13 @@
+strong{
+    /* color: var(--txt-destaque); */
+    background: linear-gradient(135deg, var(--detalhes), var(--txt-destaque));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.container{
+    justify-content: center;
+    min-height: 100%;
+    gap: 1rem;
+}
