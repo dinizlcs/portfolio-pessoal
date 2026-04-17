@@ -1,9 +1,6 @@
 <?php
-    require_once "php/Base.class.php";
-
-    $nascimento = new DateTime("2003-03-02");
-    $hoje = new DateTime();
-    $idadeAtual = $hoje->diff($nascimento)->y;
+    require_once "php/classes/Base.class.php";
+    require_once "php/classes/Utils.class.php";
 ?>
 
 <!DOCTYPE html>
@@ -13,20 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio-Lucas Diniz</title>
 
-    <?= Base::carregarLinks() ?>
+    <?php include "php/componentes/links-base.php" ?>
 </head>
 <body>
-    <nav>
-        <img src="img/perfil.jpg" alt="foto de perfil">
-        <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
-        <ul id="navegacao">
-            <?= Base::carregarAreas(); ?>
-        </ul>
-    </nav>
+    <?php include "php/componentes/menu-nav.php" ?>
 
     <main>
-        Conteúdo principal aqui. <br>
-        Idade atual: <?= $idadeAtual; ?> (Teste)
+        <p>
+            Conteúdo principal aqui. <br>
+            Idade atual: <?= Utils::calcIdade(); ?> (Teste)
+        </p>
     </main>
 </body>
 </html>
