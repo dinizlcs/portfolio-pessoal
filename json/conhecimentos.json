@@ -1,0 +1,37 @@
+{
+    "Excel completo" : {
+        "descricao" : "Desde 2018 venho focando no uso de Excel, principalmente com VBA para automação de tarefas.<br/>Com o Excel VBA, desenvolvo soluções para facilitar rotinas do dia a dia, como a criação de formulários que ajudam na inserção de dados e mantêm um padrão de organização. Também trabalho com interação entre planilhas usando botões, permitindo executar ações de forma rápida e prática.<br/>Um exemplo disso é a integração de dados de duas ou mais planilhas em uma só, feita de forma automática. Além disso, consigo incluir cálculos personalizados, como somar valores de diferentes planilhas e organizar tudo em colunas específicas.<br/>Também desenvolvo soluções onde, com o clique de um botão, o Excel busca imagens em uma pasta e organiza automaticamente dentro das células, facilitando a montagem e impressão de catálogos de produtos.<br/>O objetivo dessas automações é tornar o trabalho mais rápido, reduzir erros e facilitar o uso no dia a dia.",
+        "data-conclusao" : "Outubro de 2018",
+        "tags" : ["Excel básico", "Excel Avançado", "Excel com VBA"]
+    },
+    "HTML5 e CSS3" : {
+        "descricao" : "São a base do desenvolvimento web. O HTML é responsável pela estrutura de um site, definindo elementos como botões, textos, formulários e outros componentes visuais. Já o CSS atua na parte estética, aplicando cores, estilos, espaçamentos e layouts, tornando a interface mais agradável e organizada para o usuário.",
+        "data-conclusao" : "Junho de 2019",
+        "tags" : ["Estrutura web", "Estilização web", "Bootstrap"]
+    },
+    "JavaScript e JQuery" : {
+        "descricao" : "São utilizados para adicionar interatividade e dinamismo às páginas web. Com eles, é possível criar animações, validar formulários, manipular elementos em tempo real e melhorar a experiência do usuário de forma geral.",
+        "data-conclusao" : "Setembro de 2019",
+        "tags" : []
+    },
+    "PhP" : {
+        "descricao" : "Linguagem de programação voltada para o backend, amplamente utilizada no desenvolvimento web. Permite a integração com bancos de dados, como MySQL, além de facilitar a geração dinâmica de páginas HTML por meio de estruturas como loops e condicionais.",
+        "data-conclusao" : "Outubro de 2021",
+        "tags" : []
+    },
+    "Python para Data Science" : {
+        "descricao" : "Uso do Python com foco em análise, coleta, tratamento e organização de dados. Também envolve a criação de gráficos e visualizações, auxiliando na interpretação e tomada de decisões baseadas em dados.",
+        "data-conclusao" : "Outubro de 2021",
+        "tags" : ["Web scraping", "Análise de dados", "Modelagem de dados", "pandas"]
+    },
+    "Técnico em Desenvolvimento de Sistemas" : {
+        "descricao" : "Formação voltada para análise e desenvolvimento de sistemas, incluindo levantamento de requisitos, documentação e implementação de soluções. Experiência com desenvolvimento em Java, versionamento de código e aplicação de metodologias ágeis.<br/>Tenho grande interesse em Java, especialmente no desenvolvimento de aplicações desktop e web, além da criação e consumo de APIs. Como trabalho de conclusão de curso (TCC), desenvolvi um projeto de e-commerce utilizando o ecossistema Spring, com funcionalidades como carrinho de compras, cadastro de usuários, gerenciamento de produtos (cadastro, edição e exclusão) e um sistema básico de finalização de compras.",
+        "data-conclusao" : "Março de 2024",
+        "tags" : ["Desenvolvimento de software", "Desenvolvimento web", "Programação orientada a objetos (POO)", "Banco de dados relacionais", "Banco de dados não-relacionais", "Metodologias ágeis", "Clean code", "Princípios SOLID", "MVC (Model-View-Controller)", "Java", "JSON", "HTML", "CSS", "Spring Framework", "Bootstrap"]
+    },
+    "Segurança da informação" : {
+        "descricao" : "Curso em andamento com foco na proteção de dados digitais, segurança de redes e boas práticas para prevenção de vulnerabilidades e ataques cibernéticos.",
+        "data-conclusao" : "",
+        "tags" : []
+    }
+}

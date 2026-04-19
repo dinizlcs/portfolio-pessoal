@@ -8,7 +8,7 @@
 }
 
 *::-webkit-scrollbar{
-    width: .8rem;
+    width: .5rem;
 }
 
 *::-webkit-scrollbar-track{
@@ -32,6 +32,13 @@ body{
     height: 100%;
     display: flex;
     background-color: var(--cor-principal);
+}
+
+strong{
+    background: linear-gradient(135deg, var(--txt-destaque), var(--detalhes-destaque));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .container{

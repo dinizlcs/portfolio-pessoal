@@ -1,0 +1,50 @@
+.curso{
+    display: flex;
+    flex-direction: column;
+    padding: .25rem;
+    gap: .5rem;
+    overflow-wrap: break-word;
+    border: .25rem solid transparent;
+    border-radius: .25rem;
+    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
+                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+}
+
+.curso:not(:first-child){
+    margin-top: .5rem;
+}
+
+.curso p{
+    color: var(--txt-secundario);
+}
+
+.status-curso{
+    font-size: .8rem;
+}
+
+.status-curso:has(+ *){
+    margin-bottom: .5rem;
+}
+
+.curso footer{
+    padding-top: .25rem;
+    border-top: .25rem solid transparent;
+    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
+                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+}
+
+.tags li{
+    display: inline-block;
+    margin: .25rem 0;
+    padding: .25em;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+    border-radius: .25rem;
+    background-color: var(--detalhes);
+}
+
+@media (max-width: 768px){
+    .tags li{
+        margin: .15rem 0;
+    }
+}
