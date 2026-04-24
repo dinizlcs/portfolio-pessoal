@@ -4,7 +4,7 @@
     --cor-secundaria: #0D1330;
     --detalhes: #6A6BFF;
     --detalhes-destaque: #A88CFF;
-    --sombras: #02030A;
+    --sombras: rgba(2, 3, 10, 0.9);
 
     /* Botões */
     --btn-padrao: #5F74FF;

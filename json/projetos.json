@@ -1,0 +1,34 @@
+{
+    "Excel VBA" : [
+        {
+            "titulo" : "Catálogo",
+            "descricao" : "O sistema permite a criação automática de catálogos de produtos. O usuário pode escolher entre diferentes formatos de layout, como 1 coluna com 4 itens (1x4), 2 colunas por 5 linhas (2x5) ou 3 colunas por 5 linhas (3x5).<br/>Para gerar o catálogo, basta realizar configurações da pasta onde estão armazenadas as imagens e o arquivo Excel que contém os códigos dos itens. A partir dessas informações, o sistema organiza os produtos no layout selecionado e localiza automaticamente as imagens correspondentes, considerando que os arquivos possuem o mesmo nome dos códigos listados na planilha.<br/>Além disso, o processo é feito de forma automatizada, reduzindo o tempo de montagem e minimizando erros manuais na organização dos itens.",
+            "link_github" : "",
+            "id_youtube" : "m_3t18539wU",
+            "imagens" : "projetos/Catálogo/"
+        }
+    ],
+    "Desktop e Web" : [
+        {
+            "titulo" : "Lojaweb",
+            "descricao" : "Projeto em Java com Spring Boot desenvolvido como trabalho final do curso de Análise e Desenvolvimento de Sistemas (ADS). O sistema simula uma loja virtual com autenticação de usuários em dois níveis, administrador e usuário comum. Ele conta com funcionalidades como sistema de login, carrinho de compras e um fluxo simples de finalização de pedidos. Para a parte administrativa, o sistema permite o gerenciamento de produtos, incluindo cadastro, edição e exclusão. Além disso, administradores podem criar novos usuários e promover outros usuários a administradores, tendo também acesso às mesmas funcionalidades disponíveis para usuários comuns. O backend foi desenvolvido em Java utilizando o ecossistema Spring Boot, enquanto a interface foi construída com Thymeleaf para a criação de páginas HTML dinâmicas.",
+            "link_github" : "https://github.com/dinizlcs/lojaweb",
+            "id_youtube" : "jwM_XNTPi6o",
+            "imagens" : "projetos/Lojaweb/"
+        },
+        {
+            "titulo" : "Portfólio",
+            "descricao" : "A primeira versão deste site foi criada com o objetivo de reunir informações pessoais e profissionais em um único lugar. Ele funcionava como um portfólio simples, além de servir como meio de contato para oportunidades de trabalho e projetos.",
+            "link_github" : "",
+            "id_youtube" : "wSNBLAqs3DI",
+            "imagens" : "projetos/Portfólio/"
+        },
+        {
+            "titulo" : "Portfólio V2",
+            "descricao" : "A versão atual do portfólio é uma evolução dessa primeira versão. O projeto passou por uma refatoração completa, com melhorias na estrutura do código e foco em boas práticas de desenvolvimento, incluindo a utilização de HTML semântico. Também houve melhorias significativas na interface (UI), resultando em um design mais moderno e com melhor adaptação para dispositivos móveis, tornando a experiência mais responsiva e agradável.",
+            "link_github" : "https://github.com/dinizlcs/portfolio-pessoal",
+            "id_youtube" : "",
+            "imagens" : "projetos/Portfólio V2/"
+        }
+    ]
+}

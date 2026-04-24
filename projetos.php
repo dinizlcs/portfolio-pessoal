@@ -12,14 +12,14 @@
     <title>Portfólio-Lucas Diniz</title>
 
     <?php include "php/componentes/links-base.php" ?>
-    <link rel="stylesheet" href="css/conhecimentos.css">
+    <link rel="stylesheet" href="css/projetos.css">
 </head>
 <body>
     <?php include "php/componentes/menu-nav.php" ?>
 
     <main>
         <div class="container">
-            <?= Dados::carregarCursos(); ?>
+            <?= Dados::carregarProjetos(); ?>
         </div>
     </main>
 </body>

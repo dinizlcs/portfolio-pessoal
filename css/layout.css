@@ -147,6 +147,11 @@ main{
         top: 15dvh;
         background-color: var(--cor-secundaria);
         display: none;
+        box-shadow: 0 10px 15px var(--sombras);
+    }
+
+    #navegacao li:nth-child(odd){
+        background-color: var(--cor-principal);
     }
 
     main{
