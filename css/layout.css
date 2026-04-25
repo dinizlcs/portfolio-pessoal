@@ -41,13 +41,17 @@ strong{
     color: transparent;
 }
 
+ul, ol{
+    list-style-position: inside;
+}
+
 .container{
     display: flex;
     flex-direction: column;
 }
 
 /* NAVEGAÇÃO */
-nav{
+.nav-principal{
     width: 20dvw;
     height: 100dvh;
     display: flex;
@@ -59,7 +63,7 @@ nav{
     background-color: var(--cor-secundaria);
 }
 
-nav img{
+.nav-principal img{
     width: 80%;
     height: auto;
     border: .25rem solid transparent;
@@ -121,14 +125,14 @@ main{
         flex-direction: column;
     }
     
-    nav{
+    .nav-principal{
         width: 100dvw;
         height: 15dvh;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    nav img{
+    .nav-principal img{
         height: 80%;
         width: auto;
         margin: .25rem;

@@ -1,0 +1,91 @@
+ul li, ol li{
+    color: var(--txt-secundario) !important;
+}
+
+#opcoes-web{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .25rem;
+    overflow-wrap: break-word;
+}
+
+.area-info{
+    padding: .25rem;
+    border: .25rem solid transparent;
+    border-radius: .25rem;
+    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
+                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+    overflow-wrap: break-word;
+}
+
+.area-info:not(:first-child){
+    margin-top: .5rem;
+}
+
+.area-info p{
+    color: var(--txt-secundario);
+}
+
+.abas{
+    margin-top: .5rem;
+    padding: .25rem;
+    border-bottom: .15rem solid var(--detalhes);
+    background-color: var(--cor-subitens);
+}
+
+.aba{
+    padding: .25rem;
+    font-size: .8rem;
+    border: none;
+    border-radius: .25rem;
+    background-color: var(--btn-padrao);
+}
+
+.aba.ativa{
+    background-color: var(--btn-positivo);
+    color: var(--form-placeholder);
+}
+
+.aba:not(.ativa):hover{
+    cursor: pointer;
+    background-color: var(--btn-hover);
+}
+
+.conteudo-aba{
+    display: none;
+    padding: .25rem;
+    background-color: var(--cor-subitens);
+    overflow-wrap: break-word;
+}
+
+.conteudo-aba.ativo{
+    display: block;
+}
+
+.info-pagamento{
+    margin-top: .5rem;
+    color: var(--txt-destaque) !important;
+}
+
+.observacao *{
+    margin-top: .5rem;
+    color: var(--txt-observacoes) !important;
+    font-size: .8rem;
+}
+
+.opcao-web{
+    width: 45%;
+    padding: .25rem;
+    background-color: var(--cor-secundaria);
+}
+
+@media (max-width: 768px){
+    #opcoes-web{
+        display: block;
+    }
+
+    .opcao-web{
+        width: 100%;
+        margin-top: .25rem;
+    }
+}
