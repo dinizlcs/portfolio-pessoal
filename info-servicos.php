@@ -134,26 +134,6 @@
                 </ul>
                 <p class="observacao">Obs.: A opção "Link para cartão" poderá gerar uma taxas.</p>
             </section>
-
-            <!-- Teste multi-páginas em diferentes section -->
-            <section class="area-info">
-                <h2>Área com abas 2</h2>
-
-                <nav class="abas" aria-label="Navegação da área de informações">
-                    <button class="aba ativa" data-aba="a2-aba1">Aba 1</button>
-                    <button class="aba" data-aba="a2-aba2">Aba 2</button>
-                </nav>
-
-                <section id="a2-aba1" class="conteudo-aba ativo">
-                    <h3>Título área 2 aba 1</h3>
-                    <p>Descrição área 2 aba 1</p>
-                </section>
-
-                <section id="a2-aba2" class="conteudo-aba">
-                    <h3>Título área 2 aba 2</h3>
-                    <p>Descrição área 2 aba 2</p>
-                </section>
-            </section>
         </div>
     </main>
 </body>
