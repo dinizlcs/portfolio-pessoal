@@ -58,7 +58,7 @@
                     $imagens = "";
                     $imgsCartao = "";
                     $extrasProjeto = "";
-                    $linkGit = $projeto["link_github"] ? "<a class='link-git' href='{$projeto['link_github']}'>Ver código</a>" : "<p class='link-git'>Código indisponível</p>";
+                    $linkGit = $projeto["link_github"] ? "<a class='link-git' href='{$projeto['link_github']}' target='_blank' rel='noopener noreferrer'>Ver código</a>" : "<p class='link-git'>Código indisponível</p>";
 
                     // Verificar se existe a pasta, criar e arrumar o Array
                     if(is_dir(__DIR__ . "/../../" . $projeto["imagens"])){
@@ -114,6 +114,7 @@
         public static function carregarDetalhes($categoria, $projeto){
             $lstProjetos = self::lerDados("projetos");
             $projeto = $lstProjetos[$categoria][$projeto];
+            $linkGit = $projeto["link_github"] ? "<a class='link-git' href='{$projeto['link_github']}' target='_blank' rel='noopener noreferrer'>Ver código: {$projeto['link_github']}</a>" : "";
             $imgsProjeto = "<p class=\"informacao\">Não há imagens disponíveis.</p>";
 
             if(is_dir(__DIR__ . "/../../" . $projeto["imagens"])){
@@ -133,6 +134,7 @@
             <h2>{$categoria}</h2>
             <h3>{$projeto["titulo"]}</h3>
             <p>{$projeto["descricao"]}</p>
+            {$linkGit}
             <iframe src="https://www.youtube.com/embed/{$projeto['id_youtube']}" frameborder="0" allowfullscreen></iframe>
             {$imgsProjeto}
             HTML;

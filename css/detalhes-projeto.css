@@ -87,6 +87,17 @@
                 linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
 }
 
+.link-git{
+    width: fit-content;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    margin-top: .5rem;
+    background: linear-gradient(135deg, var(--txt-destaque), var(--detalhes-destaque));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 .observacao{
     margin-top: .5rem;
     font-size: .8rem;
