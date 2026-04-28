@@ -1,0 +1,109 @@
+#sobreposicao{
+    width: 100dvw;
+    height: 100dvh;
+    max-width: 100dvw;
+    max-height: 100dvh;
+    background-color: var(--sombras);
+    border: none;
+    overflow: hidden;
+}
+
+#sobreposicao::backdrop{
+    background-color: var(--sombras);
+    opacity: 40%;
+}
+
+#cont-sobreposicao{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-sobreposicao{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+#btn-fechar{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    padding: .25rem;
+    border: .25rem solid var(--detalhes);
+    background-color: var(--btn-padrao);
+    aspect-ratio: 1/1;
+    z-index: 1000;
+}
+
+#btn-fechar:hover{
+    cursor: pointer;
+    background-color: var(--btn-hover);
+}
+
+.container p:first-of-type{
+    margin-top: .5rem;
+}
+
+.container iframe{
+    width: 100%;
+    margin-top: .5rem;
+    aspect-ratio: 16/9;
+    border: .25rem solid transparent;
+    border-radius: .25rem;
+    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
+                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+}
+
+.grade-imagens{
+    width: 100%;
+    margin-top: .25rem;
+    padding: .25rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: .5rem;
+    border: .25rem solid transparent;
+    border-radius: .25rem;
+    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
+                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+}
+
+.grade-imagens img{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.informacao{
+    margin-top: .25rem;
+    padding: .25rem;
+    border: .25rem solid transparent;
+    border-radius: .25rem;
+    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
+                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+}
+
+.observacao{
+    margin-top: .5rem;
+    font-size: .8rem;
+    color: var(--txt-observacoes);
+}
+
+@media (max-width: 768px) {
+    #btn-fechar{
+        font-size: 1rem;
+    }
+
+    #img-sobreposicao{
+        width: 100%;
+        height: auto;
+    }
+
+    .grade-imagens{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}

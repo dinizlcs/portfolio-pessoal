@@ -66,15 +66,15 @@
                         array_splice($imagens, 0, 2);
                     }
 
-                    // Verificar foi encontrado imagens na pasta, preparar elementos do card (Fotos e Ver mais)
+                    // Verificar se foi encontrado imagens na pasta, preparar elementos do card (Fotos e Ver mais)
                     if(!empty($imagens)){
                         $imgsCartao .= isset($imagens[0]) ? "<img src=\"{$projeto['imagens']}{$imagens[0]}\" alt=\"Imagem do projeto\">" : "<img src=\"img/img-padrao.jpg\" alt=\"Imagem padrão\">";
                         $imgsCartao .= isset($imagens[1]) ? "<img src=\"{$projeto['imagens']}{$imagens[1]}\" alt=\"Imagem do projeto\">" : "<img src=\"img/img-padrao.jpg\" alt=\"Imagem padrão\">";
 
                         if(count($imagens) > 2){
-                            $extrasProjeto = "<a href='galeria.php?categoria=" . $categoria . "&projeto=" . $idProjeto . "'>+" . count($imagens) - 2 . "</a>";
+                            $extrasProjeto = "<a href='detalhes-projeto.php?categoria=" . $categoria . "&projeto=" . $idProjeto . "'>+" . (count($imagens) - 2) . "</a>";
                         }else{
-                            $extrasProjeto = "<a href='galeria.php?categoria=" . $categoria . "&projeto=" . $idProjeto . "'>Ver projeto</a>";
+                            $extrasProjeto = "<a href='detalhes-projeto.php?categoria=" . $categoria . "&projeto=" . $idProjeto . "'>Ver projeto</a>";
                         }
                     }else{
                         $imgsCartao = <<<HTML
@@ -82,7 +82,7 @@
                         <img src="img/img-padrao.jpg" alt="Imagem padrão">
                         HTML;
 
-                        $extrasProjeto = "<a href='galeria.php?categoria=" . $categoria . "&projeto=" . $idProjeto . "'>Ver projeto</a>";
+                        $extrasProjeto = "<a href='detalhes-projeto.php?categoria=" . $categoria . "&projeto=" . $idProjeto . "'>Ver projeto</a>";
                     }
                     
                     // Criação do card
@@ -107,6 +107,35 @@
                 </section>
                 HTML;
             }
+
+            return $html;
+        }
+
+        public static function carregarDetalhes($categoria, $projeto){
+            $lstProjetos = self::lerDados("projetos");
+            $projeto = $lstProjetos[$categoria][$projeto];
+            $imgsProjeto = "<p class=\"informacao\">Não há imagens disponíveis.</p>";
+
+            if(is_dir(__DIR__ . "/../../" . $projeto["imagens"])){
+                $lstImagens = scandir(__DIR__ . "/../../" . $projeto["imagens"]);
+                array_splice($lstImagens, 0, 2);
+                
+                if(count($lstImagens) > 0){
+                    $imgsProjeto = "<p class=\"observacao\">Clique ou toque na imagem para abrir em tela cheia</p>" . "\n<div class=\"grade-imagens\">";
+                    foreach($lstImagens as $imagem){
+                        $imgsProjeto .= "<img src=\"{$projeto['imagens']}{$imagem}\" alt=\"Imagem do projeto {$projeto['titulo']}\">";
+                    }
+                    $imgsProjeto .= "</div>";
+                }
+            }
+            
+            $html = <<<HTML
+            <h2>{$categoria}</h2>
+            <h3>{$projeto["titulo"]}</h3>
+            <p>{$projeto["descricao"]}</p>
+            <iframe src="https://www.youtube.com/embed/{$projeto['id_youtube']}" frameborder="0" allowfullscreen></iframe>
+            {$imgsProjeto}
+            HTML;
 
             return $html;
         }

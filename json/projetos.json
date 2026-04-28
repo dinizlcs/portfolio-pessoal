@@ -20,14 +20,14 @@
             "titulo" : "Portfólio",
             "descricao" : "A primeira versão deste site foi criada com o objetivo de reunir informações pessoais e profissionais em um único lugar. Ele funcionava como um portfólio simples, além de servir como meio de contato para oportunidades de trabalho e projetos.",
             "link_github" : "",
-            "id_youtube" : "wSNBLAqs3DI",
-            "imagens" : "projetos/Portfólio/"
+            "id_youtube" : "EwtnUYonXe8",
+            "imagens" : "projetos/Portfólio V1/"
         },
         {
             "titulo" : "Portfólio V2",
             "descricao" : "A versão atual do portfólio é uma evolução dessa primeira versão. O projeto passou por uma refatoração completa, com melhorias na estrutura do código e foco em boas práticas de desenvolvimento, incluindo a utilização de HTML semântico. Também houve melhorias significativas na interface (UI), resultando em um design mais moderno e com melhor adaptação para dispositivos móveis, tornando a experiência mais responsiva e agradável.",
             "link_github" : "https://github.com/dinizlcs/portfolio-pessoal",
-            "id_youtube" : "",
+            "id_youtube" : "kHZUIK-Ya88",
             "imagens" : "projetos/Portfólio V2/"
         }
     ]
