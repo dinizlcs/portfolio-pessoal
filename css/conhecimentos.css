@@ -3,7 +3,6 @@
     flex-direction: column;
     padding: .25rem;
     gap: .5rem;
-    overflow-wrap: break-word;
     border: .25rem solid transparent;
     border-radius: .25rem;
     background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
@@ -38,7 +37,6 @@
     margin: .25rem 0;
     padding: .25em;
     word-break: break-all;
-    overflow-wrap: anywhere;
     border-radius: .25rem;
     background-color: var(--detalhes);
 }

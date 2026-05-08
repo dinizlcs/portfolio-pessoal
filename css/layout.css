@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     color: var(--txt-principal);
+    overflow-wrap: break-word;
 }
 
 *::-webkit-scrollbar{
@@ -127,7 +128,7 @@ main{
     
     .nav-principal{
         width: 100dvw;
-        height: 15dvh;
+        height: 12dvh;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -148,7 +149,7 @@ main{
     #navegacao{
         width: 100dvw;
         position: fixed;
-        top: 15dvh;
+        top: 12dvh;
         background-color: var(--cor-secundaria);
         display: none;
         box-shadow: 0 10px 15px var(--sombras);

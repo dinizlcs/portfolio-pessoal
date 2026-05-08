@@ -6,7 +6,6 @@ ul li, ol li{
     display: flex;
     justify-content: space-between;
     margin-top: .25rem;
-    overflow-wrap: break-word;
 }
 
 .area-info{
@@ -15,7 +14,6 @@ ul li, ol li{
     border-radius: .25rem;
     background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
                 linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
-    overflow-wrap: break-word;
 }
 
 .area-info:not(:first-child){
@@ -55,7 +53,6 @@ ul li, ol li{
     display: none;
     padding: .25rem;
     background-color: var(--cor-subitens);
-    overflow-wrap: break-word;
 }
 
 .conteudo-aba.ativo{
