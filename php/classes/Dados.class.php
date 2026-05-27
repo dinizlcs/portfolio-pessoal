@@ -114,7 +114,7 @@
         public static function carregarDetalhes($categoria, $projeto){
             $lstProjetos = self::lerDados("projetos");
             $projeto = $lstProjetos[$categoria][$projeto];
-            $linkGit = $projeto["link_github"] ? "<a class='link-git' href='{$projeto['link_github']}' target='_blank' rel='noopener noreferrer'>Ver código: {$projeto['link_github']}</a>" : "";
+            $linkGit = $projeto["link_github"] ? "<a class='link-git' href='{$projeto['link_github']}' target='_blank' rel='noopener noreferrer'><strong>Ver código: {$projeto['link_github']}</strong></a>" : "";
             $imgsProjeto = "<p class=\"informacao\">Não há imagens disponíveis.</p>";
 
             if(is_dir(__DIR__ . "/../../" . $projeto["imagens"])){

@@ -13,7 +13,7 @@
 }
 
 *::-webkit-scrollbar-track{
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-menu);
 }
 
 *::-webkit-scrollbar-thumb{
@@ -36,10 +36,8 @@ body{
 }
 
 strong{
-    background: linear-gradient(135deg, var(--txt-destaque), var(--detalhes-destaque));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--cor-itens);
+    text-shadow: 0 0 6px var(--txt-principal);
 }
 
 ul, ol{
@@ -61,7 +59,7 @@ ul, ol{
     justify-content: center;
     overflow: hidden;
     gap: 1rem;
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-menu);
 }
 
 .nav-principal img{
@@ -69,8 +67,8 @@ ul, ol{
     height: auto;
     border: .25rem solid transparent;
     border-radius: .25rem;
-    background: linear-gradient(#000,#000) padding-box,
-                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+    background: linear-gradient(var(--cor-menu),var(--cor-menu)) padding-box,
+                linear-gradient(135deg, var(--btn-padrao), var(--btn-positivo)) border-box;
 }
 
 #btn-menu{
@@ -105,10 +103,10 @@ ul, ol{
 }
 
 #navegacao li.ativo{
-    border-color: var(--detalhes-destaque);
+    border-color: var(--btn-positivo);
 }
 
-#navegacao li:hover{
+#navegacao li:not(.ativo):hover{
     border-color: var(--detalhes);
 }
 
@@ -150,7 +148,7 @@ main{
         width: 100dvw;
         position: fixed;
         top: 12dvh;
-        background-color: var(--cor-secundaria);
+        background-color: var(--cor-menu);
         display: none;
         box-shadow: 0 10px 15px var(--sombras);
     }

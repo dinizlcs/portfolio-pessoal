@@ -40,7 +40,7 @@
     height: 1.5rem;
     font-size: .8rem;
     padding: .25rem;
-    border: .25rem solid var(--detalhes);
+    border: .20rem solid var(--detalhes);
     background-color: var(--btn-padrao);
     z-index: 1000;
 }
@@ -48,6 +48,14 @@
 #btn-fechar:hover{
     cursor: pointer;
     background-color: var(--btn-hover);
+}
+
+#btn-fechar:focus{
+    outline: none;
+}
+
+#btn-fechar:focus-visible{
+    outline: none;
 }
 
 .container p:first-of-type{
@@ -60,8 +68,8 @@
     aspect-ratio: 16/9;
     border: .25rem solid transparent;
     border-radius: .25rem;
-    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
-                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+    background: linear-gradient(var(--cor-menu),var(--cor-menu)) padding-box,
+                linear-gradient(135deg, var(--btn-padrao), var(--btn-positivo)) border-box;
 }
 
 .grade-imagens{
@@ -73,8 +81,8 @@
     gap: .5rem;
     border: .25rem solid transparent;
     border-radius: .25rem;
-    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
-                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+    background: linear-gradient(var(--cor-menu),var(--cor-menu)) padding-box,
+                linear-gradient(135deg, var(--btn-padrao), var(--btn-positivo)) border-box;
 }
 
 .grade-imagens img{
@@ -87,18 +95,18 @@
     padding: .25rem;
     border: .25rem solid transparent;
     border-radius: .25rem;
-    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
-                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+    background: linear-gradient(var(--cor-menu),var(--cor-menu)) padding-box,
+                linear-gradient(135deg, var(--btn-padrao), var(--btn-positivo)) border-box;
 }
 
 .link-git{
     width: fit-content;
     max-width: 100%;
     margin-top: .5rem;
-    background: linear-gradient(135deg, var(--txt-destaque), var(--detalhes-destaque));
+    /* background: linear-gradient(135deg, var(--txt-destaque), var(--detalhes-destaque));
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    color: transparent; */
 }
 
 .observacao{

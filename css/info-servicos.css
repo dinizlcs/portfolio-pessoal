@@ -12,8 +12,8 @@ ul li, ol li{
     padding: .25rem;
     border: .25rem solid transparent;
     border-radius: .25rem;
-    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
-                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+    background: linear-gradient(var(--cor-menu),var(--cor-menu)) padding-box,
+                linear-gradient(135deg, var(--cor-itens) 40%, var(--txt-destaque)) border-box;
 }
 
 .area-info:not(:first-child){
@@ -27,8 +27,9 @@ ul li, ol li{
 .abas{
     margin-top: .5rem;
     padding: .25rem;
-    border-bottom: .15rem solid var(--detalhes);
-    background-color: var(--cor-subitens);
+    border-bottom: .15rem solid transparent;
+    background: linear-gradient(var(--cor-itens),var(--cor-itens)) padding-box,
+                linear-gradient(135deg, var(--btn-padrao) 50%, var(--btn-positivo)) border-box;
 }
 
 .aba{
@@ -40,8 +41,8 @@ ul li, ol li{
 }
 
 .aba.ativa{
-    background-color: var(--btn-positivo);
-    color: var(--form-placeholder);
+    background: linear-gradient(135deg, var(--btn-padrao), var(--btn-positivo) 35%);
+    color: var(--txt-principal-alt);
 }
 
 .aba:not(.ativa):hover{
@@ -73,10 +74,14 @@ ul li, ol li{
 .opcao-web{
     width: 45%;
     padding: .25rem;
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-itens);
 }
 
 @media (max-width: 768px){
+    .aba:nth-child(n+2){
+        margin-top: .25rem;
+    }
+    
     #opcoes-web{
         display: block;
     }

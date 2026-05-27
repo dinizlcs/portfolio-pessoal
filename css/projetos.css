@@ -25,8 +25,8 @@
 .projeto{
     border: .25rem solid transparent;
     border-radius: .25rem;
-    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
-                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+    background: linear-gradient(var(--cor-menu),var(--cor-menu)) padding-box,
+                linear-gradient(180deg, var(--btn-padrao), var(--btn-positivo)) border-box;
 }
 
 .projeto:nth-child(n+5){
@@ -56,8 +56,8 @@
     text-align: center;
     padding: .25rem 0;
     border-top: .15rem solid transparent;
-    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
-                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+    background: linear-gradient(var(--cor-menu),var(--cor-menu)) padding-box,
+                linear-gradient(135deg, var(--btn-padrao), var(--btn-positivo)) border-box;
 }
 
 a.link-git{
@@ -73,8 +73,8 @@ a.link-git{
     gap: .5rem;
     border-top: .25rem solid transparent;
     border-bottom: .25rem solid transparent;
-    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
-                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+    background: linear-gradient(var(--cor-menu),var(--cor-menu)) padding-box,
+                linear-gradient(135deg, var(--btn-padrao), var(--btn-positivo)) border-box;
 }
 
 .grade-midia iframe{

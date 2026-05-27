@@ -5,8 +5,8 @@
     gap: .5rem;
     border: .25rem solid transparent;
     border-radius: .25rem;
-    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
-                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+    background: linear-gradient(var(--cor-menu),var(--cor-menu)) padding-box,
+                linear-gradient(135deg, var(--btn-padrao), var(--btn-positivo)) border-box;
 }
 
 .curso:not(:first-child){
@@ -28,8 +28,8 @@
 .curso footer{
     padding-top: .25rem;
     border-top: .25rem solid transparent;
-    background: linear-gradient(var(--cor-secundaria), var(--cor-secundaria)) padding-box,
-                linear-gradient(135deg, var(--form-entrada), var(--form-foco), var(--detalhes)) border-box;
+    background: linear-gradient(var(--cor-menu),var(--cor-menu)) padding-box,
+                linear-gradient(135deg, var(--btn-padrao), var(--btn-positivo)) border-box;
 }
 
 .tags li{
@@ -38,7 +38,7 @@
     padding: .25em;
     word-break: break-all;
     border-radius: .25rem;
-    background-color: var(--detalhes);
+    background-color: var(--cor-itens);
 }
 
 @media (max-width: 768px){

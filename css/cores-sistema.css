@@ -1,28 +1,30 @@
 :root{
     /* Geral */
-    --cor-principal: #050814;
-    --cor-secundaria: #0D1330;
-    --cor-subitens: #1A2A5F;
-    --detalhes: #6A6BFF;
-    --detalhes-destaque: #A88CFF;
-    --sombras: rgba(2, 3, 10, 0.9);
+    --cor-principal: #050816;
+    --cor-menu: #0C1133;
+    --cor-itens: #121A45;
+    --cor-subitens: #1C255C;
+    --detalhes: #6E78D8;
+    --detalhes-destaque: #B9C4FF;
+    --sombras: rgba(2, 3, 11, 0.92);
 
     /* Botões */
-    --btn-padrao: #5F74FF;
-    --btn-hover: #7F92FF;
-    --btn-negativo: #FF4D6D;
-    --btn-positivo: #29C8FF;
+    --btn-padrao: #2632C4;
+    --btn-hover: #4B5CFF;
+    --btn-negativo: #A85663;
+    --btn-positivo: #CDB39A;
 
     /* Formulários */
-    --form-corpo: #0B1026;
-    --form-entrada: #11183A;
-    --form-borda: #5F74FF;
-    --form-foco: #9C8BFF;
+    --form-corpo: #0D1231;
+    --form-entrada: #161F52;
+    --form-borda: #7D88E8;
+    --form-foco: #F0E0D1;
 
     /* Textos */
-    --form-placeholder: #6C73A8;
-    --txt-principal: #F2F5FF;
-    --txt-secundario: #B8C0FF;
-    --txt-observacoes: #7F86B5;
-    --txt-destaque: #8FD8FF;
+    --form-placeholder: #8891C8;
+    --txt-principal: #F4EFE9;
+    --txt-principal-alt: #0A0D1F;
+    --txt-secundario: #B7BEDD;
+    --txt-observacoes: #8C7A73;
+    --txt-destaque: #FFE6C7;
 }
