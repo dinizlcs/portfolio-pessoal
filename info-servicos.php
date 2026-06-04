@@ -77,7 +77,7 @@
                     <p>Para aplicativos desktop (programas instalados no computador), o valor é composto por três partes:</p>
                     <ul>
                         <li>Criação do sistema</li>
-                        <li>Manutenção do bando de dados online (Quando necessário)</li>
+                        <li>Manutenção do banco de dados online (Quando necessário)</li>
                         <li>Suporte técnico (Suporte total)</li>
                     </ul>
                     <p class="info-pagamento">Como funciona na prática?</p>
@@ -132,7 +132,7 @@
                     <li>Boleto</li>
                     <li>Link para cartão</li>
                 </ul>
-                <p class="observacao">Obs.: A opção "Link para cartão" poderá gerar uma taxas.</p>
+                <p class="observacao">Obs.: A opção "Link para cartão" poderá gerar uma taxa extra.</p>
             </section>
         </div>
     </main>
