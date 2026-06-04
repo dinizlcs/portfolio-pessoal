@@ -36,7 +36,7 @@ body{
 }
 
 strong{
-    color: var(--cor-itens);
+    color: var(--txt-destaque);
     text-shadow: 0 0 6px var(--txt-principal);
 }
 
